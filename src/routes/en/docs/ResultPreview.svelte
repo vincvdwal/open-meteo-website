@@ -609,6 +609,7 @@
 						{#if results}
 							{#each results.slice(0, 10) as chart}
 								<HighchartContainer
+									className={'w-100'}
 									options={chart}
 									{useStockChart}
 									style={useStockChart ? 'height: 500px' : 'height: 400px'}
